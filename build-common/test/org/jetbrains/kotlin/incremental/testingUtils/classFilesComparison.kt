@@ -16,10 +16,13 @@
 
 package org.jetbrains.kotlin.incremental.testingUtils
 
-import com.google.protobuf.ExtensionRegistry
+import com.google.common.collect.Sets
+import com.google.common.hash.Hashing
+import com.google.common.io.Files
 import com.intellij.openapi.util.io.FileUtil
 import org.jetbrains.kotlin.incremental.LocalFileKotlinClass
 import org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader
+import org.jetbrains.kotlin.protobuf.ExtensionRegistry
 import org.jetbrains.kotlin.serialization.DebugProtoBuf
 import org.jetbrains.kotlin.serialization.jvm.BitEncoding
 import org.jetbrains.kotlin.serialization.jvm.DebugJvmProtoBuf
