@@ -8,7 +8,6 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/dependencies/protobuf-java-2.5.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/ideaSDK/sources/sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/ideaSDK/sources/sources.jar!/jps/antLayout/src" />
       <root url="jar://$PROJECT_DIR$/ideaSDK/sources/sources.jar!/jps/jps-builders/src" />
@@ -21,6 +20,7 @@
       <root url="jar://$PROJECT_DIR$/ideaSDK/sources/sources.jar!/jps/model-serialization/testSrc" />
       <root url="jar://$PROJECT_DIR$/ideaSDK/sources/sources.jar!/jps/plugin-system/src" />
       <root url="jar://$PROJECT_DIR$/ideaSDK/sources/sources.jar!/jps/standalone-builder/src" />
+      <root url="jar://$PROJECT_DIR$/dependencies/download/protobuf-java-2.5.0-sources.jar!/" />
     </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/ideaSDK/jps" recursive="false" />
   </library>

@@ -6900,51 +6900,7 @@ public final class DebugProtoBuf {
 
     public void writeTo(org.jetbrains.kotlin.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      org.jetbrains.kotlin.protobuf.GeneratedMessage
-        .ExtendableMessage<org.jetbrains.kotlin.serialization.DebugProtoBuf.Type>.ExtensionWriter extensionWriter =
-          newExtensionWriter();
-      for (int i = 0; i < argument_.size(); i++) {
-        output.writeMessage(2, argument_.get(i));
-      }
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBool(3, nullable_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(4, flexibleTypeCapabilitiesId_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeMessage(5, flexibleUpperBound_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt32(6, className_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeInt32(7, typeParameter_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(8, flexibleUpperBoundId_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeInt32(9, typeParameterName_);
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeMessage(10, outerType_);
-      }
-      if (((bitField0_ & 0x00000200) == 0x00000200)) {
-        output.writeInt32(11, outerTypeId_);
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeInt32(12, typeAliasName_);
-      }
-      if (((bitField0_ & 0x00000400) == 0x00000400)) {
-        output.writeMessage(13, abbreviatedType_);
-      }
-      if (((bitField0_ & 0x00000800) == 0x00000800)) {
-        output.writeInt32(14, abbreviatedTypeId_);
-      }
-      extensionWriter.writeUntil(200, output);
-      getUnknownFields().writeTo(output);
+      throw new java.lang.UnsupportedOperationException("Unsupported");
     }
 
     private int memoizedSerializedSize = -1;
@@ -8836,30 +8792,7 @@ public final class DebugProtoBuf {
 
     public void writeTo(org.jetbrains.kotlin.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      org.jetbrains.kotlin.protobuf.GeneratedMessage
-        .ExtendableMessage<org.jetbrains.kotlin.serialization.DebugProtoBuf.TypeParameter>.ExtensionWriter extensionWriter =
-          newExtensionWriter();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, id_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, name_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBool(3, reified_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeEnum(4, variance_.getNumber());
-      }
-      for (int i = 0; i < upperBound_.size(); i++) {
-        output.writeMessage(5, upperBound_.get(i));
-      }
-      for (int i = 0; i < upperBoundId_.size(); i++) {
-        output.writeInt32(6, upperBoundId_.get(i));
-      }
-      extensionWriter.writeUntil(1000, output);
-      getUnknownFields().writeTo(output);
+      throw new java.lang.UnsupportedOperationException("Unsupported");
     }
 
     private int memoizedSerializedSize = -1;
@@ -10773,59 +10706,7 @@ public final class DebugProtoBuf {
 
     public void writeTo(org.jetbrains.kotlin.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      org.jetbrains.kotlin.protobuf.GeneratedMessage
-        .ExtendableMessage<org.jetbrains.kotlin.serialization.DebugProtoBuf.Class>.ExtensionWriter extensionWriter =
-          newExtensionWriter();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, flags_);
-      }
-      if (getSupertypeIdList().size() > 0) {
-        output.writeRawVarint32(18);
-        output.writeRawVarint32(supertypeIdMemoizedSerializedSize);
-      }
-      for (int i = 0; i < supertypeId_.size(); i++) {
-        output.writeInt32NoTag(supertypeId_.get(i));
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(3, fqName_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(4, companionObjectName_);
-      }
-      for (int i = 0; i < typeParameter_.size(); i++) {
-        output.writeMessage(5, typeParameter_.get(i));
-      }
-      for (int i = 0; i < supertype_.size(); i++) {
-        output.writeMessage(6, supertype_.get(i));
-      }
-      if (getNestedClassNameList().size() > 0) {
-        output.writeRawVarint32(58);
-        output.writeRawVarint32(nestedClassNameMemoizedSerializedSize);
-      }
-      for (int i = 0; i < nestedClassName_.size(); i++) {
-        output.writeInt32NoTag(nestedClassName_.get(i));
-      }
-      for (int i = 0; i < constructor_.size(); i++) {
-        output.writeMessage(8, constructor_.get(i));
-      }
-      for (int i = 0; i < function_.size(); i++) {
-        output.writeMessage(9, function_.get(i));
-      }
-      for (int i = 0; i < property_.size(); i++) {
-        output.writeMessage(10, property_.get(i));
-      }
-      for (int i = 0; i < typeAlias_.size(); i++) {
-        output.writeMessage(11, typeAlias_.get(i));
-      }
-      for (int i = 0; i < enumEntry_.size(); i++) {
-        output.writeMessage(13, enumEntry_.get(i));
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeMessage(30, typeTable_);
-      }
-      extensionWriter.writeUntil(200, output);
-      getUnknownFields().writeTo(output);
+      throw new java.lang.UnsupportedOperationException("Unsupported");
     }
 
     private int memoizedSerializedSize = -1;
@@ -14008,24 +13889,7 @@ public final class DebugProtoBuf {
 
     public void writeTo(org.jetbrains.kotlin.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      org.jetbrains.kotlin.protobuf.GeneratedMessage
-        .ExtendableMessage<org.jetbrains.kotlin.serialization.DebugProtoBuf.Package>.ExtensionWriter extensionWriter =
-          newExtensionWriter();
-      for (int i = 0; i < function_.size(); i++) {
-        output.writeMessage(3, function_.get(i));
-      }
-      for (int i = 0; i < property_.size(); i++) {
-        output.writeMessage(4, property_.get(i));
-      }
-      for (int i = 0; i < typeAlias_.size(); i++) {
-        output.writeMessage(5, typeAlias_.get(i));
-      }
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(30, typeTable_);
-      }
-      extensionWriter.writeUntil(200, output);
-      getUnknownFields().writeTo(output);
+      throw new java.lang.UnsupportedOperationException("Unsupported");
     }
 
     private int memoizedSerializedSize = -1;
@@ -16320,18 +16184,7 @@ public final class DebugProtoBuf {
 
     public void writeTo(org.jetbrains.kotlin.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      org.jetbrains.kotlin.protobuf.GeneratedMessage
-        .ExtendableMessage<org.jetbrains.kotlin.serialization.DebugProtoBuf.Constructor>.ExtensionWriter extensionWriter =
-          newExtensionWriter();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, flags_);
-      }
-      for (int i = 0; i < valueParameter_.size(); i++) {
-        output.writeMessage(2, valueParameter_.get(i));
-      }
-      extensionWriter.writeUntil(200, output);
-      getUnknownFields().writeTo(output);
+      throw new java.lang.UnsupportedOperationException("Unsupported");
     }
 
     private int memoizedSerializedSize = -1;
@@ -17564,42 +17417,7 @@ public final class DebugProtoBuf {
 
     public void writeTo(org.jetbrains.kotlin.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      org.jetbrains.kotlin.protobuf.GeneratedMessage
-        .ExtendableMessage<org.jetbrains.kotlin.serialization.DebugProtoBuf.Function>.ExtensionWriter extensionWriter =
-          newExtensionWriter();
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(1, oldFlags_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(2, name_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeMessage(3, returnType_);
-      }
-      for (int i = 0; i < typeParameter_.size(); i++) {
-        output.writeMessage(4, typeParameter_.get(i));
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeMessage(5, receiverType_);
-      }
-      for (int i = 0; i < valueParameter_.size(); i++) {
-        output.writeMessage(6, valueParameter_.get(i));
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt32(7, returnTypeId_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeInt32(8, receiverTypeId_);
-      }
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(9, flags_);
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeMessage(30, typeTable_);
-      }
-      extensionWriter.writeUntil(200, output);
-      getUnknownFields().writeTo(output);
+      throw new java.lang.UnsupportedOperationException("Unsupported");
     }
 
     private int memoizedSerializedSize = -1;
@@ -19796,45 +19614,7 @@ public final class DebugProtoBuf {
 
     public void writeTo(org.jetbrains.kotlin.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      org.jetbrains.kotlin.protobuf.GeneratedMessage
-        .ExtendableMessage<org.jetbrains.kotlin.serialization.DebugProtoBuf.Property>.ExtensionWriter extensionWriter =
-          newExtensionWriter();
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(1, oldFlags_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(2, name_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeMessage(3, returnType_);
-      }
-      for (int i = 0; i < typeParameter_.size(); i++) {
-        output.writeMessage(4, typeParameter_.get(i));
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeMessage(5, receiverType_);
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeMessage(6, setterValueParameter_);
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeInt32(7, getterFlags_);
-      }
-      if (((bitField0_ & 0x00000200) == 0x00000200)) {
-        output.writeInt32(8, setterFlags_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt32(9, returnTypeId_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeInt32(10, receiverTypeId_);
-      }
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(11, flags_);
-      }
-      extensionWriter.writeUntil(200, output);
-      getUnknownFields().writeTo(output);
+      throw new java.lang.UnsupportedOperationException("Unsupported");
     }
 
     private int memoizedSerializedSize = -1;
@@ -21580,30 +21360,7 @@ public final class DebugProtoBuf {
 
     public void writeTo(org.jetbrains.kotlin.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      org.jetbrains.kotlin.protobuf.GeneratedMessage
-        .ExtendableMessage<org.jetbrains.kotlin.serialization.DebugProtoBuf.ValueParameter>.ExtensionWriter extensionWriter =
-          newExtensionWriter();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, flags_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, name_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeMessage(3, type_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeMessage(4, varargElementType_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(5, typeId_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeInt32(6, varargElementTypeId_);
-      }
-      extensionWriter.writeUntil(200, output);
-      getUnknownFields().writeTo(output);
+      throw new java.lang.UnsupportedOperationException("Unsupported");
     }
 
     private int memoizedSerializedSize = -1;
@@ -22785,33 +22542,7 @@ public final class DebugProtoBuf {
 
     public void writeTo(org.jetbrains.kotlin.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      org.jetbrains.kotlin.protobuf.GeneratedMessage
-        .ExtendableMessage<org.jetbrains.kotlin.serialization.DebugProtoBuf.TypeAlias>.ExtensionWriter extensionWriter =
-          newExtensionWriter();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, flags_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, name_);
-      }
-      for (int i = 0; i < typeParameter_.size(); i++) {
-        output.writeMessage(3, typeParameter_.get(i));
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeMessage(4, underlyingType_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(5, underlyingTypeId_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeMessage(6, expandedType_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeInt32(7, expandedTypeId_);
-      }
-      extensionWriter.writeUntil(200, output);
-      getUnknownFields().writeTo(output);
+      throw new java.lang.UnsupportedOperationException("Unsupported");
     }
 
     private int memoizedSerializedSize = -1;
@@ -23962,15 +23693,7 @@ public final class DebugProtoBuf {
 
     public void writeTo(org.jetbrains.kotlin.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      org.jetbrains.kotlin.protobuf.GeneratedMessage
-        .ExtendableMessage<org.jetbrains.kotlin.serialization.DebugProtoBuf.EnumEntry>.ExtensionWriter extensionWriter =
-          newExtensionWriter();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, name_);
-      }
-      extensionWriter.writeUntil(200, output);
-      getUnknownFields().writeTo(output);
+      throw new java.lang.UnsupportedOperationException("Unsupported");
     }
 
     private int memoizedSerializedSize = -1;
